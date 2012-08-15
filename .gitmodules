@@ -1,0 +1,3 @@
+[submodule "protected/vendors/pheal"]
+	path = protected/vendors/pheal
+	url = git://github.com/ppetermann/pheal.git
