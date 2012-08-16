@@ -14,3 +14,7 @@ $dbConfig = array(
 			'password' => '[DB PASSWORD]',
 			'charset' => 'utf8',
 		);
+
+Make sure to run the following commands to then setup your database:
+
+yiic migrate --migrationPath=user.migrations
