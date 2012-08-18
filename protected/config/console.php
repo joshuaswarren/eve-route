@@ -5,7 +5,15 @@
 require_once('dbconfig.php');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'Eve Route',
+	'name'=>'Eve Route Console',
+	'import'=>array(
+		'application.models.*',
+		'application.components.*',
+		'application.modules.user.models.*',
+        'application.modules.user.components.*',		
+        'application.vendors.*',
+        'application.vendors.pheal.*',
+	),	
 	'preload'=>array('log'),	
 	'modules'=>array(
             'user'=>array(

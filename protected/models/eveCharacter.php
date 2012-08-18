@@ -33,13 +33,17 @@ class eveCharacter extends CActiveRecord
 
 	public function defaultScope()
     {
-    	if(isset(Yii::app()->user->id)) 
-		    $userId=Yii::app()->user->id;
-		else
-			$userId = null;
-        return array(
-            'condition'=>"userId='".$userId."'",
-        );
+	    if (Yii::app() instanceof CWebApplication)
+	    {
+	    	if(isset(Yii::app()->user->id)) 
+			    $userId=Yii::app()->user->id;
+			else
+				$userId = null;
+	        return array(
+	            'condition'=>"userId='".$userId."'",
+	        );
+	    } else
+		    return array();
     }
 
 	/**

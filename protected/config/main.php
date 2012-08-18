@@ -20,6 +20,8 @@ return array(
 		'application.components.*',
 		'application.modules.user.models.*',
         'application.modules.user.components.*',		
+        'application.vendors.*',
+        'application.vendors.pheal.*',
 	),
 
 	'modules'=>array(
