@@ -80,7 +80,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		'db'=>$dbConfig,	
+		'db'=> require 'dbconfig.php',			
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',
